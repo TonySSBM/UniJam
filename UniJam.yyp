@@ -35,6 +35,7 @@
   },
   "name":"UniJam",
   "resources":[
+    {"id":{"name":"objChar","path":"objects/objChar/objChar.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "resourceType":"GMProject",
