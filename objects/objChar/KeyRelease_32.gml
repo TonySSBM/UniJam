@@ -6,8 +6,5 @@ if(!swinging){
 	
 	var actualReturnSpeed = returnSpeed + swingCharge;
 	
-	//actual swing animation play
-	
-	//set alarm for swing end
-	alarm[0] = 60;
+	sprite_index = sprCharSwing;
 }
