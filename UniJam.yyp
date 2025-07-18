@@ -42,6 +42,7 @@
     {"id":{"name":"sprCharIdle","path":"sprites/sprCharIdle/sprCharIdle.yy",},},
     {"id":{"name":"sprCharSwing","path":"sprites/sprCharSwing/sprCharSwing.yy",},},
     {"id":{"name":"sprCharWalk","path":"sprites/sprCharWalk/sprCharWalk.yy",},},
+    {"id":{"name":"sprCourt","path":"sprites/sprCourt/sprCourt.yy",},},
     {"id":{"name":"sprStar","path":"sprites/sprStar/sprStar.yy",},},
   ],
   "resourceType":"GMProject",
