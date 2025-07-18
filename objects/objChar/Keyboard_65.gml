@@ -6,4 +6,8 @@ if(!keyboard_check(ord("D"))){
 	if(keyboard_check(ord("W")) ^^ keyboard_check(ord("S"))){ //checks thru xor if theres normalization needed
 		hspeed *= NORMALIZE_MOVEMENT;
 	}
+	
+	if (x + hspeed <= hBounds){
+		hspeed = 0;
+	}
 }

@@ -15,3 +15,6 @@ moveSpeed = 4;
 NORMALIZE_MOVEMENT = 0.7071;
 
 returnSpeed = 5;
+
+hBounds = 211;
+vBounds = 12;

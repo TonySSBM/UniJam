@@ -5,4 +5,8 @@ if(!keyboard_check(ord("W"))){
 	if(keyboard_check(ord("A")) ^^ keyboard_check(ord("D"))){ //checks thru xor if theres normalization needed
 		vspeed *= NORMALIZE_MOVEMENT;
 	}
+	
+	if (y + vspeed >= room_height - vBounds){
+		vspeed = 0;
+	}
 }

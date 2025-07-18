@@ -1,7 +1,7 @@
 /// @description Ball Moving
 
 //collision with side of screen
-if(x < ballBounds or x > (room_width - ballBounds)){
+if(x < hBallBounds or x > (room_width - hBallBounds)){
 	hspeed *= -1;
 }
 

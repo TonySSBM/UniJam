@@ -7,6 +7,7 @@ actualSpeed = 4;
 star = true; //false = planet
 
 ballBounds = 30;
+hBallBounds = 208;
 
 vspeed = baseSpeed;
 hspeed = 1;
