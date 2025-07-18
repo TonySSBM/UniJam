@@ -37,6 +37,7 @@
   "resources":[
     {"id":{"name":"objChar","path":"objects/objChar/objChar.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"sprCharWalk","path":"sprites/sprCharWalk/sprCharWalk.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
