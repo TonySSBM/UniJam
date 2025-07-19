@@ -2,7 +2,14 @@
 
 if(!swinging){
 	charging = true;
-	swingCharge += chargeRate;
-	sprite_index = sprCharSwing;
-	image_index = 0;
+	swingCharge += chargeRate * delta_time / 1_000_000;
+	if(sprite_index != sprCharSwing){
+		sprite_index = sprCharSwing;
+		image_index = 0;
+	}
+}
+
+if(charging and image_index >= 1){
+	image_index = 1;
+	image_speed = 0;
 }

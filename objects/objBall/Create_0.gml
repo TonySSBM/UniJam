@@ -4,10 +4,16 @@ ballDirection = 0; //??? do i want ball direction or do i just change it based o
 baseSpeed = 4;
 actualSpeed = 4;
 
+slow = false;
+slowRate = 2;
+
 star = true; //false = planet
 
 ballBounds = 30;
 hBallBounds = 208;
 
 vspeed = baseSpeed;
-hspeed = 1;
+hspeed = 0;
+
+playerInstance = instance_find(objChar, 0);
+collided = false;

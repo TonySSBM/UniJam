@@ -1,6 +1,6 @@
 /// @description Animation State Controller
 
-if(!swinging){
+if(!swinging and !charging){
 	if(vspeed == 0 and hspeed == 0){
 		if(sprite_index != sprCharIdle){
 			sprite_index = sprCharIdle;

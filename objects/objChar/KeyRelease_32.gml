@@ -3,8 +3,5 @@
 if(!swinging){
 	swinging = true;
 	charging = false;
-	
-	var actualReturnSpeed = returnSpeed + swingCharge;
-	
-	sprite_index = sprCharSwing;
 }
+image_speed = 1;
