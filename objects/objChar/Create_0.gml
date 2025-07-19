@@ -3,7 +3,7 @@
 global.slowdown = false;
 
 meter = 90.0;
-meterRate = 1;
+meterRate = 5;
 meterChargeRate = 10;
 
 swingCharge = 0;

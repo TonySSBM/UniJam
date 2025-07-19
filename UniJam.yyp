@@ -37,6 +37,7 @@
   "resources":[
     {"id":{"name":"objBall","path":"objects/objBall/objBall.yy",},},
     {"id":{"name":"objChar","path":"objects/objChar/objChar.yy",},},
+    {"id":{"name":"objMeterFill","path":"objects/objMeterFill/objMeterFill.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"sprAngel","path":"sprites/sprAngel/sprAngel.yy",},},
     {"id":{"name":"sprBossOne","path":"sprites/sprBossOne/sprBossOne.yy",},},
@@ -48,6 +49,7 @@
     {"id":{"name":"sprCourt","path":"sprites/sprCourt/sprCourt.yy",},},
     {"id":{"name":"sprEnemyHealth","path":"sprites/sprEnemyHealth/sprEnemyHealth.yy",},},
     {"id":{"name":"sprMeter","path":"sprites/sprMeter/sprMeter.yy",},},
+    {"id":{"name":"sprMeterFill","path":"sprites/sprMeterFill/sprMeterFill.yy",},},
     {"id":{"name":"sprMeterStar","path":"sprites/sprMeterStar/sprMeterStar.yy",},},
     {"id":{"name":"sprMoon","path":"sprites/sprMoon/sprMoon.yy",},},
     {"id":{"name":"sprPlayerHealth","path":"sprites/sprPlayerHealth/sprPlayerHealth.yy",},},
