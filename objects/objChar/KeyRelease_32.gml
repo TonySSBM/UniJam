@@ -1,8 +1,9 @@
 /// @description Release Swing
 
+image_speed = 1;
+	
 if(!swinging){
 	swinging = true;
 	charging = false;
-	image_speed = 1;
 	moveSpeed /= slowSpeedModifier;
 }

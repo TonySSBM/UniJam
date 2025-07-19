@@ -5,7 +5,7 @@ baseSpeed = 4;
 actualSpeed = 4;
 
 slow = false;
-slowRate = 2;
+slowRate = 3;
 
 star = false; //false = planet
 

@@ -2,7 +2,7 @@
 
 global.slowdown = false;
 
-meter = 90.0;
+meter = 0.0;
 meterRate = 5;
 meterChargeRate = 10;
 

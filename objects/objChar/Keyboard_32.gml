@@ -2,7 +2,11 @@
 
 if(!swinging){
 	charging = true;
-	swingCharge += chargeRate * delta_time / 1_000_000;
+	if(global.slowdown){
+		swingCharge +=  chargeRate / 2 * delta_time / 1_000_000;
+	}else{
+		swingCharge += chargeRate * delta_time / 1_000_000;
+	}
 	if(sprite_index != sprCharSwing){
 		sprite_index = sprCharSwing;
 		image_index = 0;

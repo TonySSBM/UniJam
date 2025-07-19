@@ -47,9 +47,12 @@ if(!collided and playerInstance.sprite_index == sprCharSwing and playerInstance.
 	}
 	
 	show_debug_message(speed);
-	if(speed > 7 or sprite_index == sprSuperStar){
+	if(speed > 7 or sprite_index == sprSuperStar or (global.slowdown and speed > (7 / slowRate))){
 		sprite_index = sprSuperStar;
 		show_debug_message("SUPER: " + string(actualReturnSpeed));
+		for(var i = 0; i < 5; i++){
+			var starDrop = instance_create_layer(x, y, layer, objStarDrop);
+		}
 	}else{
 		sprite_index = sprStar;
 	}

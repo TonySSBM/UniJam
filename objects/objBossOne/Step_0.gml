@@ -16,7 +16,7 @@ if(global.slowdown and !slow){
 x += xPos * moveSpeed;
 
 var amplitude = 8
-var frequency = 0.07;
+var frequency = 0.13;
 
 var baseY = .67 * sprite_get_height(sprBossOneAttack); 
 
