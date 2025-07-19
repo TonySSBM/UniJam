@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprStar",
+    "path":"sprites/sprStar/sprStar.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -11,10 +11,11 @@ chargeRate = 2;
 swinging = false;
 charging = false;
 
-moveSpeed = 4;
+moveSpeed = 2.2;
+slowSpeedModifier = 1/5;
 NORMALIZE_MOVEMENT = 0.7071;
 
-returnSpeed = 6;
+returnSpeed = 4;
 
 hBounds = 211;
 vBounds = 12;

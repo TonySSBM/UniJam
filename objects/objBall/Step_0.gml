@@ -23,20 +23,22 @@ if(!collided and playerInstance.sprite_index == sprCharSwing and playerInstance.
 		actualReturnSpeed /= 2;
 	}
 	
-	if(playerInstance.image_index == 2){
-		vspeed = -0.6 * actualReturnSpeed;
-		hspeed = -0.4 * actualReturnSpeed * playerInstance.image_xscale;;
+	show_debug_message(actualReturnSpeed);
+	
+	if(playerInstance.image_index <= 2){
+		vspeed = -1.0 * lengthdir_x(actualReturnSpeed, 60);
+		hspeed = -1.0 * lengthdir_y(actualReturnSpeed, 60) * playerInstance.image_xscale;
 	}
-	else if(playerInstance.image_index == 3){
+	else if(playerInstance.image_index <= 3){
 		vspeed = -1.0 * actualReturnSpeed;
-		hspeed = 0.0 * actualReturnSpeed * playerInstance.image_xscale;;
+		hspeed = 0.0 * actualReturnSpeed * playerInstance.image_xscale;
 	}
-	else if(playerInstance.image_index >= 4){
-		vspeed = -0.6 * actualReturnSpeed;
-		hspeed = 0.4 * actualReturnSpeed * playerInstance.image_xscale;;
+	else if(playerInstance.image_index <= 6){
+		vspeed = -1.0 * lengthdir_x(actualReturnSpeed, 60);
+		hspeed = 1.0 * lengthdir_y(actualReturnSpeed, 60) * playerInstance.image_xscale;
 	}
 	else{ //should never happen
-		show_debug_message("Faulty Collision");
+		show_debug_message("Faulty Collision: " + string(playerInstance.image_index));
 		vspeed *= -1;
 		hspeed = -1 * playerInstance.image_xscale;
 	}

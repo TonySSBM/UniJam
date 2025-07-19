@@ -2,7 +2,7 @@
 
 if(sprite_index == sprCharSwing){
 	swinging = false;
-	swingCharge = 0;
 	sprite_index = sprCharIdle;
+	swingCharge = 0;
 	image_index = 0;
 }

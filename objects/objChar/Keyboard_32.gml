@@ -6,6 +6,7 @@ if(!swinging){
 	if(sprite_index != sprCharSwing){
 		sprite_index = sprCharSwing;
 		image_index = 0;
+		moveSpeed *= slowSpeedModifier;
 	}
 }
 
