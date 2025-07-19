@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprBossOne",
-    "path":"sprites/sprBossOne/sprBossOne.yy",
+    "name":"sprBossOneIdle",
+    "path":"sprites/sprBossOneIdle/sprBossOneIdle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
