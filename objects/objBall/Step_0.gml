@@ -26,17 +26,19 @@ if(!collided and playerInstance.sprite_index == sprCharSwing and playerInstance.
 	
 	show_debug_message(actualReturnSpeed);
 	
+	var swingAngle = random_range(55,65);
+	
 	if(playerInstance.image_index <= 2){
-		vspeed = -1.0 * lengthdir_x(actualReturnSpeed, 50);
-		hspeed = -1.0 * lengthdir_y(actualReturnSpeed, 50) * playerInstance.image_xscale;
+		vspeed = -1.0 * lengthdir_x(actualReturnSpeed, swingAngle);
+		hspeed = -1.0 * lengthdir_y(actualReturnSpeed, swingAngle) * playerInstance.image_xscale;
 	}
 	else if(playerInstance.image_index <= 3){
 		vspeed = -1.0 * actualReturnSpeed;
 		hspeed = 0.0 * actualReturnSpeed * playerInstance.image_xscale;
 	}
 	else if(playerInstance.image_index <= 6){
-		vspeed = -1.0 * lengthdir_x(actualReturnSpeed, 50);
-		hspeed = 1.0 * lengthdir_y(actualReturnSpeed, 50) * playerInstance.image_xscale;
+		vspeed = -1.0 * lengthdir_x(actualReturnSpeed, swingAngle);
+		hspeed = 1.0 * lengthdir_y(actualReturnSpeed, swingAngle) * playerInstance.image_xscale;
 	}
 	else{ //should never happen
 		show_debug_message("Faulty Collision: " + string(playerInstance.image_index));
