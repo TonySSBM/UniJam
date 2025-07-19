@@ -61,6 +61,7 @@ if(!collided and playerInstance.sprite_index == sprCharSwing and playerInstance.
 	show_debug_message(speed);
 	if(speed > 7 or (global.slowdown and speed > (7 / slowRate))){
 		sprite_index = sprSuperStar;
+		audio_play_sound(sndTennisHitHard, 11, false);
 		show_debug_message("SUPER: " + string(actualReturnSpeed));
 		for(var i = 0; i < 5; i++){
 			var starDrop = instance_create_layer(x, y, layer, objStarDrop);
