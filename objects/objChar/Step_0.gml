@@ -13,3 +13,5 @@ if(!swinging and !charging){
 		}
 	}
 }
+
+depth = -y;

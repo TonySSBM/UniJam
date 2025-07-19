@@ -21,3 +21,5 @@ var frequency = 0.07;
 var baseY = .67 * sprite_get_height(sprBossOneAttack); 
 
 y = baseY + sin(x * frequency) * amplitude;
+
+depth = -y;

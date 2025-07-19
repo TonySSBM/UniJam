@@ -1,7 +1,7 @@
 /// @description Move Right
 
 if(!keyboard_check(ord("A"))){
-	if(!swinging){
+	if(!swinging && !charging){
 		image_xscale = 1;
 	}
 	hspeed = moveSpeed;

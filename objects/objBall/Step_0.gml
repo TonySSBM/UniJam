@@ -47,8 +47,9 @@ if(!collided and playerInstance.sprite_index == sprCharSwing and playerInstance.
 	}
 	
 	show_debug_message(speed);
-	if(speed > 7){
+	if(speed > 7 or sprite_index == sprSuperStar){
 		sprite_index = sprSuperStar;
+		show_debug_message("SUPER: " + string(actualReturnSpeed));
 	}else{
 		sprite_index = sprStar;
 	}
@@ -94,3 +95,5 @@ if(star and !(sprite_index != sprStar or spriteindex != sprSuperStar)){
 }else if(!star){
 	sprite_index = sprMoon;
 }
+
+depth = -y;
