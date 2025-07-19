@@ -5,7 +5,7 @@ idleList = [sprAlienBlueIdle, sprAlienGreenIdle, sprAlienPinkIdle, sprAlienPurpl
 cheerList = [sprAlienBlueCheer, sprAlienGreenCheer, sprAlienPinkCheer, sprAlienPurpleCheer,
 			sprAlienRedCheer, sprAlienWhiteCheer, sprAlienYellowCheer];
 
-alienNumber = irandom(7);
+alienNumber = irandom(6);
 idleAnimation = idleList[alienNumber];
 cheerAnimation = cheerList[alienNumber];
 

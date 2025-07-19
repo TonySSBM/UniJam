@@ -1,6 +1,7 @@
 /// @description Initializing Variables
 
 global.slowdown = false;
+randomise();
 
 meter = 0.0;
 meterRate = 5;
@@ -12,7 +13,7 @@ swinging = false;
 charging = false;
 
 moveSpeed = 1.4;
-slowSpeedModifier = 1/5;
+slowSpeedModifier = 1/4;
 NORMALIZE_MOVEMENT = 0.7071;
 
 returnSpeed = 4;
