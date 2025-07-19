@@ -7,7 +7,7 @@ actualSpeed = 4;
 slow = false;
 slowRate = 2;
 
-star = true; //false = planet
+star = false; //false = planet
 
 ballBounds = 30;
 hBallBounds = 208;
@@ -17,3 +17,6 @@ hspeed = 0;
 
 playerInstance = instance_find(objChar, 0);
 collided = false;
+
+image_xscale = .7
+image_yscale = .7;

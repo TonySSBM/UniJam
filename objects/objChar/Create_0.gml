@@ -11,7 +11,7 @@ chargeRate = 2;
 swinging = false;
 charging = false;
 
-moveSpeed = 2.2;
+moveSpeed = 1.4;
 slowSpeedModifier = 1/5;
 NORMALIZE_MOVEMENT = 0.7071;
 
