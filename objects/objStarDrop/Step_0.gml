@@ -11,3 +11,4 @@ if(targetting){
 
 speed += accel * delta_time / 1000000;
 image_angle += hspeed;
+depth = -y;

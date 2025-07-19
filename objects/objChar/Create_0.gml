@@ -23,3 +23,5 @@ game_set_speed(60, gamespeed_fps);
 game_set_speed(16666.67, gamespeed_microseconds);
 
 instance_create_layer(x,y,layer, objAngel);
+
+event_user(2); //spawn alien audience

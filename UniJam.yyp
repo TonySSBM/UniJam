@@ -39,6 +39,7 @@
   },
   "name":"UniJam",
   "resources":[
+    {"id":{"name":"objAlien","path":"objects/objAlien/objAlien.yy",},},
     {"id":{"name":"objAngel","path":"objects/objAngel/objAngel.yy",},},
     {"id":{"name":"objBall","path":"objects/objBall/objBall.yy",},},
     {"id":{"name":"objBossOne","path":"objects/objBossOne/objBossOne.yy",},},
