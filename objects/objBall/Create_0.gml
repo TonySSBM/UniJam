@@ -17,7 +17,12 @@ hspeed = random_range(-1.8,1.8);
 
 playerInstance = instance_find(objChar, 0);
 collided = false;
+hit = false;
+reset = true;
+resetCounter = 20;
 
-image_xscale = .7
+image_xscale = .7;
 image_yscale = .7;
+
+collisionSpeedMultiplier = 0.96;
 

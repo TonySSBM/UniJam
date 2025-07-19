@@ -3,11 +3,22 @@
 //collision with side of screen
 if(x < hBallBounds or x > (room_width - hBallBounds)){
 	hspeed *= -1;
+	
+	if(reset){
+		speed *= collisionSpeedMultiplier;
+		reset = false;
+		alarm[0] = resetCounter;
+	}
 }
 
 //collision with top wall
 if(y <= ballBounds){
 	vspeed *= -1;
+	if(reset){
+		speed *= collisionSpeedMultiplier;
+		reset = false;
+		alarm[0] = resetCounter;
+	}
 }
 
 //collision with the bottom wall
@@ -18,6 +29,7 @@ if(y >= (room_height - ballBounds)){
 //collision with player object
 if(!collided and playerInstance.sprite_index == sprCharSwing and playerInstance.image_index > 1 and position_meeting(x ,y, playerInstance)){
 	collided = true;
+	hit = false;
 	star = true;
 	var actualReturnSpeed = playerInstance.returnSpeed + playerInstance.swingCharge;
 	if(global.slowdown){
@@ -47,18 +59,25 @@ if(!collided and playerInstance.sprite_index == sprCharSwing and playerInstance.
 	}
 	
 	show_debug_message(speed);
-	if(speed > 7 or sprite_index == sprSuperStar or (global.slowdown and speed > (7 / slowRate))){
+	if(speed > 7 or (global.slowdown and speed > (7 / slowRate))){
 		sprite_index = sprSuperStar;
 		show_debug_message("SUPER: " + string(actualReturnSpeed));
 		for(var i = 0; i < 5; i++){
 			var starDrop = instance_create_layer(x, y, layer, objStarDrop);
 		}
 	}else{
+		if(sprite_index == sprSuperStar){
+			for(var i = 0; i < 5; i++){
+				var starDrop = instance_create_layer(x, y, layer, objStarDrop);
+			}
+		}
 		sprite_index = sprStar;
 	}
 }
 
-if(star and position_meeting(x ,y, objBossOne)){
+if(!hit and star and position_meeting(x ,y, objBossOne)){
+	hit = true;
+	vspeed *= -1;
 	instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
 	if(instance_number(objEnemyHealth) == 0){
 		event_perform_object(objChar, ev_other, ev_user1);
@@ -69,7 +88,12 @@ if(star and position_meeting(x ,y, objBossOne)){
 			event_perform_object(objChar, ev_other, ev_user1);
 		}
 	}
-	instance_destroy(self);
+	if(reset){
+		speed *= collisionSpeedMultiplier;
+		reset = false;
+		alarm[0] = resetCounter;
+	}
+	//instance_destroy(self);
 }
 
 if(playerInstance.sprite_index != sprCharSwing){
@@ -97,6 +121,13 @@ if(star and !(sprite_index != sprStar or spriteindex != sprSuperStar)){
 	sprite_index = sprStar;
 }else if(!star){
 	sprite_index = sprMoon;
+}
+
+if(abs(speed) < 1){
+	image_alpha -= 0.03;
+	if(image_alpha <= 0.05){
+		instance_destroy(self);
+	}
 }
 
 depth = -y;
