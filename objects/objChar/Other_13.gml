@@ -5,6 +5,11 @@ swinging = false;
 image_speed = 1;
 sprite_index = sprCharIdle;
 
+if(audio_is_playing(sndSpecialStartup)){
+	audio_stop_sound(sndSpecialStartup);
+}
+audio_play_sound(sndSpecialAttack, 11, false);
+
 var newStar = instance_create_layer(x + 3,y - 54,layer, objStarSuper);
 with (newStar) {
 	image_speed = -2;

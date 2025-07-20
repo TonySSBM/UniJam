@@ -8,6 +8,7 @@ if(meter >= 100 and !swinging and !charging){
 	
 	//super move animation
 	sprite_index = sprCharSuper;
+	audio_play_sound(sndSpecialStartup, 11, true);
 	speed = 0;
 	image_xscale = 1;
 	superActive = true;
