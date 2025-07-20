@@ -5,7 +5,7 @@ if(x < hBallBounds or x > (room_width - hBallBounds)){
 	hspeed *= -1;
 	
 	if(reset){
-		speed *= collisionSpeedMultiplier;
+		//speed *= collisionSpeedMultiplier;
 		reset = false;
 		alarm[0] = resetCounter;
 	}
@@ -15,7 +15,7 @@ if(x < hBallBounds or x > (room_width - hBallBounds)){
 if(y <= ballBounds){
 	vspeed *= -1;
 	if(reset){
-		speed *= collisionSpeedMultiplier;
+		//speed *= collisionSpeedMultiplier;
 		reset = false;
 		alarm[0] = resetCounter;
 	}
@@ -73,6 +73,7 @@ if(!collided and playerInstance.sprite_index == sprCharSwing and playerInstance.
 			}
 		}
 		sprite_index = sprStar;
+		audio_play_sound(sndTennisHitRegular, 11, false);
 	}
 }
 
@@ -88,6 +89,9 @@ if(!hit and star and position_meeting(x ,y, objBossOne)){
 		if(instance_number(objEnemyHealth) == 0){
 			event_perform_object(objChar, ev_other, ev_user1);
 		}
+		audio_play_sound(sndEnemyHitHard, 11, false);
+	}else{
+		audio_play_sound(sndEnemyHitRegular, 11, false);
 	}
 	if(reset){
 		speed *= collisionSpeedMultiplier;
@@ -124,11 +128,11 @@ if(star and !(sprite_index != sprStar or spriteindex != sprSuperStar)){
 	sprite_index = sprMoon;
 }
 
-if(abs(speed) < 1){
+/*if(abs(speed) < 1){
 	image_alpha -= 0.03;
 	if(image_alpha <= 0.05){
 		instance_destroy(self);
 	}
-}
+}*/
 
 depth = -y;

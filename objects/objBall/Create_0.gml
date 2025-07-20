@@ -24,5 +24,5 @@ resetCounter = 20;
 image_xscale = .7;
 image_yscale = .7;
 
-collisionSpeedMultiplier = 0.96;
+collisionSpeedMultiplier = 0.8;
 

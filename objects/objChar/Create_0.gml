@@ -3,7 +3,7 @@
 global.slowdown = false;
 randomise();
 
-meter = 0.0;
+meter = 20.0;
 meterRate = 5;
 meterChargeRate = 10;
 
@@ -12,7 +12,7 @@ chargeRate = 2;
 swinging = false;
 charging = false;
 
-moveSpeed = 1.4;
+moveSpeed = 1.7;
 slowSpeedModifier = 1/4;
 NORMALIZE_MOVEMENT = 0.7071;
 
