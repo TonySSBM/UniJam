@@ -45,6 +45,8 @@
     {"id":{"name":"objBall","path":"objects/objBall/objBall.yy",},},
     {"id":{"name":"objBossDrop","path":"objects/objBossDrop/objBossDrop.yy",},},
     {"id":{"name":"objBossOne","path":"objects/objBossOne/objBossOne.yy",},},
+    {"id":{"name":"objBossTwoHand","path":"objects/objBossTwoHand/objBossTwoHand.yy",},},
+    {"id":{"name":"objBossTwoHead","path":"objects/objBossTwoHead/objBossTwoHead.yy",},},
     {"id":{"name":"objChar","path":"objects/objChar/objChar.yy",},},
     {"id":{"name":"objEnemyHealth","path":"objects/objEnemyHealth/objEnemyHealth.yy",},},
     {"id":{"name":"objHitBorder","path":"objects/objHitBorder/objHitBorder.yy",},},

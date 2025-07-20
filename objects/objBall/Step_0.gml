@@ -105,6 +105,66 @@ if(!hit and star and position_meeting(x ,y, objBossOne)){
 	instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
 	if(instance_number(objEnemyHealth) == 0){
 		event_perform_object(objChar, ev_other, ev_user1);
+		instance_destroy(objBall);
+	}
+	if(sprite_index == sprSuperStar){	
+		instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
+		if(instance_number(objEnemyHealth) == 0){
+			event_perform_object(objChar, ev_other, ev_user1);
+			instance_destroy(objBall);
+		}
+		audio_play_sound(sndEnemyHitHard, 11, false);
+	}else{
+		audio_play_sound(sndEnemyHitRegular, 11, false);
+	}
+	if(reset){
+		speed *= collisionSpeedMultiplier;
+		reset = false;
+		alarm[0] = resetCounter;
+	}
+	//instance_destroy(self);
+}
+
+
+if(!hit and star and position_meeting(x ,y, objBossTwoHand)){
+	with (playerInstance) {
+		isScreenshake = 1;
+		alarm[0] = screenshakeLength;
+	}
+	
+	vspeed *= -1;
+	speed *= .8;
+	if(sprite_index == sprSuperStar){	
+		audio_play_sound(sndEnemyHitHard, 11, false);
+	}else{
+		audio_play_sound(sndEnemyHitRegular, 11, false);
+	}
+	
+	sprite_index = sprSaturn;
+	star = false;
+	if(reset){
+		speed *= collisionSpeedMultiplier;
+		reset = false;
+		alarm[0] = resetCounter;
+	}
+	//instance_destroy(self);
+}
+
+if(!hit and star and position_meeting(x ,y, objBossTwoHead)){
+	with (instance_find(objBossTwoHead, 0)){
+		event_user(0);
+	}
+	
+	with (playerInstance) {
+		isScreenshake = 1;
+		alarm[0] = screenshakeLength;
+	}
+	
+	hit = true;
+	vspeed *= -1;
+	instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
+	if(instance_number(objEnemyHealth) == 0){
+		event_perform_object(objChar, ev_other, ev_user1);
 	}
 	if(sprite_index == sprSuperStar){	
 		instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
@@ -147,7 +207,7 @@ if(hspeed != 0){
 if(star and !(sprite_index != sprStar or spriteindex != sprSuperStar)){
 	sprite_index = sprStar;
 }else if(!star){
-	sprite_index = sprMoon;
+	//sprite_index = sprMoon;
 }
 
 /*if(abs(speed) < 1){

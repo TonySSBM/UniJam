@@ -32,4 +32,13 @@ isScreenshake = 0;
 screenshakePower = 7;
 screenshakeLength = 10;
 
+//create a copy of all the enemyhealth
+global.positionXList = array_create(0);
+global.positionYList = array_create(0);
+with(objEnemyHealth){
+	array_push(global.positionXList, x);
+	array_push(global.positionYList, y);
+	show_debug_message("added: " + string(x) + " " + string(y));
+}
+
 event_user(2); //spawn alien audience

@@ -1,0 +1,28 @@
+/// @description Sin Wave
+
+if(x + xPos > room_width - hBounds){
+	objBossTwoHead.xPos = -1;
+}else if(x + xPos < hBounds){
+	objBossTwoHead.xPos = 1;
+}
+
+if(global.slowdown and !slow){
+	slow = true;
+	moveSpeed /= slowRate;
+}else if(!global.slowdown and slow){
+	slow = false;
+	moveSpeed *= slowRate;
+}
+
+if(!playerInstance.superActive){
+	x += objBossTwoHead.xPos * moveSpeed;
+}
+
+if (flash_timer > 0) {
+    flash_timer--;
+    if (flash_timer == 0) {
+        image_blend = c_white;
+    }
+}
+
+depth = -y;
