@@ -183,6 +183,76 @@ if(!hit and star and position_meeting(x ,y, objBossTwoHead)){
 	//instance_destroy(self);
 }
 
+if(!hit and star and position_meeting(x ,y, objBossThreeMid)){
+	with (instance_find(objBossThreeMid, 0)){
+		event_user(0);
+	}
+	
+	with (playerInstance) {
+		isScreenshake = 1;
+		alarm[0] = screenshakeLength;
+	}
+	
+	hit = true;
+	vspeed *= -1;
+	instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
+	if(instance_number(objEnemyHealth) == 0){
+		event_perform_object(objChar, ev_other, ev_user1);
+		instance_destroy(objBall);
+	}
+	if(sprite_index == sprSuperStar){	
+		instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
+		if(instance_number(objEnemyHealth) == 0){
+			event_perform_object(objChar, ev_other, ev_user1);
+			instance_destroy(objBall);
+		}
+		audio_play_sound(sndEnemyHitHard, 11, false);
+	}else{
+		audio_play_sound(sndEnemyHitRegular, 11, false);
+	}
+	if(reset){
+		speed *= collisionSpeedMultiplier;
+		reset = false;
+		alarm[0] = resetCounter;
+	}
+	//instance_destroy(self);
+}
+
+if(!hit and star and position_meeting(x ,y, objBossThreeSide)){
+	with (instance_find(objBossThreeSide, 0)){
+		event_user(0);
+	}
+	
+	with (playerInstance) {
+		isScreenshake = 1;
+		alarm[0] = screenshakeLength;
+	}
+	
+	hit = true;
+	vspeed *= -1;
+	instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
+	if(instance_number(objEnemyHealth) == 0){
+		event_perform_object(objChar, ev_other, ev_user1);
+		instance_destroy(objBall);
+	}
+	if(sprite_index == sprSuperStar){	
+		instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
+		if(instance_number(objEnemyHealth) == 0){
+			event_perform_object(objChar, ev_other, ev_user1);
+			instance_destroy(objBall);
+		}
+		audio_play_sound(sndEnemyHitHard, 11, false);
+	}else{
+		audio_play_sound(sndEnemyHitRegular, 11, false);
+	}
+	if(reset){
+		speed *= collisionSpeedMultiplier;
+		reset = false;
+		alarm[0] = resetCounter;
+	}
+	//instance_destroy(self);
+}
+
 if(playerInstance.sprite_index != sprCharSwing){
 	collided = false;
 }

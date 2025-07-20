@@ -45,6 +45,9 @@
     {"id":{"name":"objBall","path":"objects/objBall/objBall.yy",},},
     {"id":{"name":"objBossDrop","path":"objects/objBossDrop/objBossDrop.yy",},},
     {"id":{"name":"objBossOne","path":"objects/objBossOne/objBossOne.yy",},},
+    {"id":{"name":"objBossThreeBody","path":"objects/objBossThreeBody/objBossThreeBody.yy",},},
+    {"id":{"name":"objBossThreeMid","path":"objects/objBossThreeMid/objBossThreeMid.yy",},},
+    {"id":{"name":"objBossThreeSide","path":"objects/objBossThreeSide/objBossThreeSide.yy",},},
     {"id":{"name":"objBossTwoHand","path":"objects/objBossTwoHand/objBossTwoHand.yy",},},
     {"id":{"name":"objBossTwoHead","path":"objects/objBossTwoHead/objBossTwoHead.yy",},},
     {"id":{"name":"objChar","path":"objects/objChar/objChar.yy",},},
@@ -55,6 +58,7 @@
     {"id":{"name":"objPlayerHealth","path":"objects/objPlayerHealth/objPlayerHealth.yy",},},
     {"id":{"name":"objStarDrop","path":"objects/objStarDrop/objStarDrop.yy",},},
     {"id":{"name":"objStarSuper","path":"objects/objStarSuper/objStarSuper.yy",},},
+    {"id":{"name":"End","path":"rooms/End/End.yy",},},
     {"id":{"name":"Main","path":"rooms/Main/Main.yy",},},
     {"id":{"name":"TennisCourt","path":"rooms/TennisCourt/TennisCourt.yy",},},
     {"id":{"name":"sndBossAttack","path":"sounds/sndBossAttack/sndBossAttack.yy",},},
@@ -102,6 +106,7 @@
     {"id":{"name":"sprBossOneAttack","path":"sprites/sprBossOneAttack/sprBossOneAttack.yy",},},
     {"id":{"name":"sprBossOneIdle","path":"sprites/sprBossOneIdle/sprBossOneIdle.yy",},},
     {"id":{"name":"sprBossThreeAttack","path":"sprites/sprBossThreeAttack/sprBossThreeAttack.yy",},},
+    {"id":{"name":"sprBossThreeBody","path":"sprites/sprBossThreeBody/sprBossThreeBody.yy",},},
     {"id":{"name":"sprBossThreeIdle","path":"sprites/sprBossThreeIdle/sprBossThreeIdle.yy",},},
     {"id":{"name":"sprBossTwoHandAttack","path":"sprites/sprBossTwoHandAttack/sprBossTwoHandAttack.yy",},},
     {"id":{"name":"sprBossTwoHandIdle","path":"sprites/sprBossTwoHandIdle/sprBossTwoHandIdle.yy",},},
@@ -140,6 +145,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"Main","path":"rooms/Main/Main.yy",},},
     {"roomId":{"name":"TennisCourt","path":"rooms/TennisCourt/TennisCourt.yy",},},
+    {"roomId":{"name":"End","path":"rooms/End/End.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

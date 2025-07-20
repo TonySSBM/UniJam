@@ -1,11 +1,13 @@
 /// @description Enemy Defeated
 
 
-/*
-if(instance_number(objBossThree) != 0){
-	instance_destroy(objBossThree);
+if(instance_number(objBossThreeMid) != 0){
+	instance_destroy(objBossThreeMid);
+	instance_destroy(objBossThreeSide);
+	instance_destroy(objBossThreeBody);
 	//go to win screen
-}*/
+	room_goto_previous();
+}
 
 
 if(instance_number(objBossTwoHead) != 0){
@@ -24,6 +26,11 @@ if(instance_number(objBossTwoHead) != 0){
 	}
 	
 	//create boss three
+	var lh = instance_create_layer(250, 81, layer, objBossThreeSide);
+	var mh = instance_create_layer(320, 97, layer, objBossThreeMid);
+	var rh = instance_create_layer(388, 81, layer, objBossThreeSide);
+	var bh = instance_create_layer(320, 0, layer, objBossThreeBody);
+	
 }
 
 
