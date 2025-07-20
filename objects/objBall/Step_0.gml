@@ -9,6 +9,11 @@ if(x < hBallBounds or x > (room_width - hBallBounds)){
 		reset = false;
 		alarm[0] = resetCounter;
 	}
+	
+	if(!audio_is_playing(sndProjectileBump)){
+		audio_stop_sound(sndProjectileBump);
+	}
+	audio_play_sound(sndProjectileBump, 11, false);
 }
 
 //collision with top wall
@@ -19,6 +24,10 @@ if(y <= ballBounds){
 		reset = false;
 		alarm[0] = resetCounter;
 	}
+	if(!audio_is_playing(sndProjectileBump)){
+		audio_stop_sound(sndProjectileBump);
+	}
+	audio_play_sound(sndProjectileBump, 11, false);
 }
 
 //collision with the bottom wall

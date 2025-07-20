@@ -7,4 +7,7 @@ if(!swinging){
 	moveSpeed /= slowSpeedModifier;
 	image_index = 0;
 	sprite_index = sprCharSwing;
+	if(audio_is_playing(sndCharge)){
+		audio_stop_sound(sndCharge);
+	}
 }

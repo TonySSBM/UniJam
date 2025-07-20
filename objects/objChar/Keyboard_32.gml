@@ -9,6 +9,7 @@ if(!swinging){
 	}
 	if(sprite_index != sprCharCharge){
 		sprite_index = sprCharCharge;
+		audio_play_sound(sndCharge, 12, true);
 		image_index = 0;
 		moveSpeed *= slowSpeedModifier;
 	}
