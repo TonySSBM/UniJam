@@ -15,3 +15,6 @@ if(!swinging and !charging){
 }
 
 depth = -y;
+if(moveSpeed > baseMoveSpeed){
+	moveSpeed = baseMoveSpeed;
+}

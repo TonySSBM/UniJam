@@ -13,6 +13,7 @@ swinging = false;
 charging = false;
 
 moveSpeed = 1.7;
+baseMoveSpeed = moveSpeed;
 slowSpeedModifier = 1/4;
 NORMALIZE_MOVEMENT = 0.7071;
 
