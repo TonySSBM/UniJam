@@ -25,3 +25,13 @@ if(superActive){
 	}
 	//copy shift code for other bosses
 }
+
+if(isScreenshake == 1)
+{
+    camera_set_view_pos(view_camera[0], 5, 5);
+    camera_set_view_pos(view_camera[0], irandom_range(screenshakePower * -1, screenshakePower), irandom_range(screenshakePower * -1, screenshakePower));
+}
+else
+{
+    camera_set_view_pos(view_camera[0], 5, 5);
+}

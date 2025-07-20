@@ -27,4 +27,9 @@ game_set_speed(16666.67, gamespeed_microseconds);
 
 instance_create_layer(x,y,layer, objAngel);
 
+screenshaking = 0;
+isScreenshake = 0;
+screenshakePower = 7;
+screenshakeLength = 10;
+
 event_user(2); //spawn alien audience

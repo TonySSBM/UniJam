@@ -22,7 +22,7 @@ with (objBall) {
 	collided = true;
 	hit = false;
 	star = true;
-	var actualReturnSpeed = playerInstance.returnSpeed + playerInstance.swingCharge;
+	var actualReturnSpeed = playerInstance.returnSpeed + 2;
 	if(global.slowdown){
 		actualReturnSpeed /= 2;
 	}

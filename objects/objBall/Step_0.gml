@@ -75,6 +75,10 @@ if(!collided and playerInstance.sprite_index == sprCharSwing and playerInstance.
 		for(var i = 0; i < 5; i++){
 			var starDrop = instance_create_layer(x, y, layer, objStarDrop);
 		}
+		with (playerInstance) {
+			isScreenshake = 1;
+			alarm[0] = screenshakeLength;
+		}
 	}else{
 		if(sprite_index == sprSuperStar){
 			for(var i = 0; i < 5; i++){
@@ -89,6 +93,11 @@ if(!collided and playerInstance.sprite_index == sprCharSwing and playerInstance.
 if(!hit and star and position_meeting(x ,y, objBossOne)){
 	with (instance_find(objBossOne, 0)){
 		event_user(0);
+	}
+	
+	with (playerInstance) {
+		isScreenshake = 1;
+		alarm[0] = screenshakeLength;
 	}
 	
 	hit = true;
