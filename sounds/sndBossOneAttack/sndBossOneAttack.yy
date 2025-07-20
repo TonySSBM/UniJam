@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.2139456,
+  "duration":0.2615873,
   "name":"sndBossOneAttack",
   "parent":{
     "name":"Sounds",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sndBossOneAttack.mp3",
   "type":0,
-  "volume":0.25,
+  "volume":0.3,
 }

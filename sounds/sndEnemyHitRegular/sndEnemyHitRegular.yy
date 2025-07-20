@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.26995465,
+  "duration":0.3026984,
   "name":"sndEnemyHitRegular",
   "parent":{
     "name":"Sounds",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sndEnemyHitRegular.mp3",
   "type":0,
-  "volume":0.4,
+  "volume":0.5,
 }

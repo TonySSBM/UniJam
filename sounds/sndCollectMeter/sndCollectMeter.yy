@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sndFootstep",
+  "%Name":"sndCollectMeter",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.06734694,
-  "name":"sndFootstep",
+  "duration":0.29097506,
+  "name":"sndCollectMeter",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sndFootstep.mp3",
+  "soundFile":"sndCollectMeter.mp3",
   "type":0,
-  "volume":0.04,
+  "volume":0.1,
 }

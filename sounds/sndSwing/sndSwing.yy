@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.25104308,
+  "duration":0.4508617,
   "name":"sndSwing",
   "parent":{
     "name":"Sounds",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sndSwing.mp3",
   "type":0,
-  "volume":0.7,
+  "volume":0.3,
 }

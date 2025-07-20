@@ -5,7 +5,7 @@
 
 
 var j = 0;
-for(i = 20; i <= 340; i += 20){
+for(var i = 20; i <= 340; i += 20){
 	if(j % 2 == 0){
 		//spawn left side
 		instance_create_layer(155, i, layer, objAlien);

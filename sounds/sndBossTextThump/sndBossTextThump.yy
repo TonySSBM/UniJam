@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sndEnemyHitHard",
+  "%Name":"sndBossTextThump",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.3026984,
-  "name":"sndEnemyHitHard",
+  "duration":1.243492,
+  "name":"sndBossTextThump",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sndEnemyHitHard.mp3",
+  "soundFile":"sndBossTextThump.mp3",
   "type":0,
-  "volume":0.5,
+  "volume":0.7,
 }
