@@ -18,3 +18,10 @@ depth = -y;
 if(moveSpeed > baseMoveSpeed){
 	moveSpeed = baseMoveSpeed;
 }
+
+if(superActive){
+	if(instance_number(objBossOne) != 0){
+		objBossOne.alarm[0]++;
+	}
+	//copy shift code for other bosses
+}

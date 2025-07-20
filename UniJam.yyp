@@ -50,6 +50,7 @@
     {"id":{"name":"objMeterFill","path":"objects/objMeterFill/objMeterFill.yy",},},
     {"id":{"name":"objPlayerHealth","path":"objects/objPlayerHealth/objPlayerHealth.yy",},},
     {"id":{"name":"objStarDrop","path":"objects/objStarDrop/objStarDrop.yy",},},
+    {"id":{"name":"objStarSuper","path":"objects/objStarSuper/objStarSuper.yy",},},
     {"id":{"name":"Main","path":"rooms/Main/Main.yy",},},
     {"id":{"name":"TennisCourt","path":"rooms/TennisCourt/TennisCourt.yy",},},
     {"id":{"name":"sndBossOneAttack","path":"sounds/sndBossOneAttack/sndBossOneAttack.yy",},},

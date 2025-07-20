@@ -1,6 +1,6 @@
 /// @description Move Up
 
-if(!keyboard_check(ord("S"))){
+if((!superActive) and !keyboard_check(ord("S"))){
 	vspeed = -moveSpeed;
 	/*
 	if(!audio_is_playing(sndFootstep)){

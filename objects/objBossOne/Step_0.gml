@@ -13,13 +13,16 @@ if(global.slowdown and !slow){
 	slow = false;
 	moveSpeed *= slowRate;
 }
-x += xPos * moveSpeed;
 
-var amplitude = 8
-var frequency = 0.13;
+if(!playerInstance.superActive){
+	x += xPos * moveSpeed;
 
-var baseY = .67 * sprite_get_height(sprBossOneAttack); 
+	var amplitude = 8
+	var frequency = 0.13;
 
-y = baseY + sin(x * frequency) * amplitude;
+	var baseY = .67 * sprite_get_height(sprBossOneAttack); 
+
+	y = baseY + sin(x * frequency) * amplitude;
+}
 
 depth = -y;

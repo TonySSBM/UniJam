@@ -1,6 +1,6 @@
 /// @description Slowdown
 
-if(meter > 0){
+if(meter > 0 and meter < 100){
 	meter -= meterRate * delta_time / 1_000_000;
 	show_debug_message("Meter After: " + string(meter));
 	global.slowdown = true;

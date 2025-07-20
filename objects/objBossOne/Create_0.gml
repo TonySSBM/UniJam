@@ -9,3 +9,5 @@ moveSpeed = 0.5;
 hBounds = objChar.hBounds + (.25 * sprite_get_width(sprBossOneAttack)); 
 slow = false;
 slowRate = 2;
+
+playerInstance = instance_find(objChar, 0);

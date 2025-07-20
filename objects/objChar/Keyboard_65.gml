@@ -1,6 +1,7 @@
 /// @description Move Left
 
-if(!keyboard_check(ord("D"))){
+if((!superActive) and !keyboard_check(ord("D"))){
+	//show_debug_message(superActive);
 	if(!swinging && !charging){
 		image_xscale = -1;
 	}

@@ -31,7 +31,7 @@ if(y <= ballBounds){
 }
 
 //collision with the bottom wall
-if(y >= (room_height - ballBounds)){
+if(y >= (room_height - 6)){
 	instance_destroy(self);
 }
 
@@ -143,5 +143,9 @@ if(star and !(sprite_index != sprStar or spriteindex != sprSuperStar)){
 		instance_destroy(self);
 	}
 }*/
+
+if(playerInstance.superActive){
+	speed = 0;
+}
 
 depth = -y;
