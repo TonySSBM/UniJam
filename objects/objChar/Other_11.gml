@@ -6,7 +6,9 @@ if(instance_number(objBossThreeMid) != 0){
 	instance_destroy(objBossThreeSide);
 	instance_destroy(objBossThreeBody);
 	//go to win screen
-	room_goto_previous();
+	audio_stop_all();
+	show_debug_message("COMPLETED GAME");
+	room_goto_next();
 }
 
 

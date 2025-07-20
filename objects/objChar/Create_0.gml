@@ -3,8 +3,8 @@
 global.slowdown = false;
 randomise();
 
-meter = 100.0; //change later
-meterRate = 5;
+meter = 50.0; //change later
+meterRate = 7;
 meterChargeRate = 10;
 
 swingCharge = 0;
@@ -15,7 +15,7 @@ superActive = false;
 
 moveSpeed = 1.7;
 baseMoveSpeed = moveSpeed;
-slowSpeedModifier = 1/4;
+slowSpeedModifier = 1/3;
 NORMALIZE_MOVEMENT = 0.7071;
 
 returnSpeed = 4;

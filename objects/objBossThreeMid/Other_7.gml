@@ -9,5 +9,5 @@ if(sprite_index == sprBossThreeAttack){
 	var newBall = instance_create_layer(x,y,layer,objBall);
 	newBall.sprite_index = sprJupiter;
 	newBall.hspeed = random_range(-.3,.3);
-	newBall.speed *= 0.7;
+	newBall.speed *= 0.2;
 }

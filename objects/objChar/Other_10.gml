@@ -1,3 +1,3 @@
 /// @description Game Over
 
-room_restart();
+room_goto(3);

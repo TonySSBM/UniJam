@@ -68,7 +68,7 @@ if(!collided and playerInstance.sprite_index == sprCharSwing and playerInstance.
 	}
 	
 	show_debug_message(speed);
-	if(speed > 7 or (global.slowdown and speed > (7 / slowRate))){
+	if(speed > 6.7 or (global.slowdown and speed > (6.7 / slowRate))){
 		sprite_index = sprSuperStar;
 		audio_play_sound(sndTennisHitHard, 11, false);
 		show_debug_message("SUPER: " + string(actualReturnSpeed));
@@ -132,8 +132,9 @@ if(!hit and star and position_meeting(x ,y, objBossTwoHand)){
 		alarm[0] = screenshakeLength;
 	}
 	
+	speed = baseSpeed * 0.4;
 	vspeed *= -1;
-	speed *= .8;
+	
 	if(sprite_index == sprSuperStar){	
 		audio_play_sound(sndEnemyHitHard, 11, false);
 	}else{
@@ -290,5 +291,7 @@ if(star and !(sprite_index != sprStar or spriteindex != sprSuperStar)){
 if(playerInstance.superActive){
 	speed = 0;
 }
+
+//if ball angle is too horizontal just delete it
 
 depth = -y;
