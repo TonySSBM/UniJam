@@ -87,6 +87,10 @@ if(!collided and playerInstance.sprite_index == sprCharSwing and playerInstance.
 }
 
 if(!hit and star and position_meeting(x ,y, objBossOne)){
+	with (instance_find(objBossOne, 0)){
+		event_user(0);
+	}
+	
 	hit = true;
 	vspeed *= -1;
 	instance_destroy(instance_nearest(0, room_height, objEnemyHealth));

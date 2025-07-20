@@ -11,3 +11,5 @@ slow = false;
 slowRate = 2;
 
 playerInstance = instance_find(objChar, 0);
+
+flash_timer = 0;
