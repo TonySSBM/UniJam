@@ -9,3 +9,8 @@ playerInstance = instance_find(objChar, 0);
 flash_timer = 0;
 
 sides = [instance_find(objBossThreeSide, 0), instance_find(objBossThreeSide, 1)];
+
+bossHealth = 6;
+healthList = ds_list_create();
+
+event_user(1);

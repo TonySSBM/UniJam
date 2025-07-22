@@ -102,14 +102,21 @@ if(!hit and star and position_meeting(x ,y, objBossOne)){
 	
 	hit = true;
 	vspeed *= -1;
-	instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
-	if(instance_number(objEnemyHealth) == 0){
+	var h = ds_list_find_value(instance_find(objBossOne, 0).healthList, ds_list_size(instance_find(objBossOne, 0).healthList) - 1);
+	ds_list_delete(instance_find(objBossOne, 0).healthList, ds_list_size(instance_find(objBossOne, 0).healthList) - 1);
+	instance_destroy(h);
+	//instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
+	if(ds_list_size(instance_find(objBossOne, 0).healthList) == 0){
 		event_perform_object(objChar, ev_other, ev_user1);
 		instance_destroy(objBall);
+		exit;
 	}
 	if(sprite_index == sprSuperStar){	
-		instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
-		if(instance_number(objEnemyHealth) == 0){
+		var h2 = ds_list_find_value(instance_find(objBossOne, 0).healthList, ds_list_size(instance_find(objBossOne, 0).healthList) - 1);
+		ds_list_delete(instance_find(objBossOne, 0).healthList, ds_list_size(instance_find(objBossOne, 0).healthList) - 1);
+		instance_destroy(h2);
+		//instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
+		if(ds_list_size(instance_find(objBossOne, 0).healthList) == 0){
 			event_perform_object(objChar, ev_other, ev_user1);
 			instance_destroy(objBall);
 		}
@@ -136,13 +143,19 @@ if(!hit and star and position_meeting(x ,y, objBossTwoHand)){
 	vspeed *= -1;
 	
 	if(sprite_index == sprSuperStar){	
-		audio_play_sound(sndEnemyHitHard, 11, false);
+		audio_play_sound(sndBossTwoDeflect, 11, false);
 	}else{
-		audio_play_sound(sndEnemyHitRegular, 11, false);
+		audio_play_sound(sndBossTwoDeflect, 11, false);
 	}
 	
 	sprite_index = sprSaturn;
 	star = false;
+	
+	with (instance_nearest(x, y, objBossTwoHand)){
+		image_index = 0;
+		sprite_index = sprBossTwoHandAttack;
+	}
+	
 	if(reset){
 		speed *= collisionSpeedMultiplier;
 		reset = false;
@@ -163,14 +176,23 @@ if(!hit and star and position_meeting(x ,y, objBossTwoHead)){
 	
 	hit = true;
 	vspeed *= -1;
-	instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
-	if(instance_number(objEnemyHealth) == 0){
+	var h = ds_list_find_value(instance_find(objBossTwoHead, 0).healthList, ds_list_size(instance_find(objBossTwoHead, 0).healthList) - 1);
+	ds_list_delete(instance_find(objBossTwoHead, 0).healthList, ds_list_size(instance_find(objBossTwoHead, 0).healthList) - 1);
+	instance_destroy(h);
+	//instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
+	if(ds_list_size(instance_find(objBossTwoHead, 0).healthList) == 0){
 		event_perform_object(objChar, ev_other, ev_user1);
+		instance_destroy(objBall);
+		exit;
 	}
 	if(sprite_index == sprSuperStar){	
-		instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
-		if(instance_number(objEnemyHealth) == 0){
+		var h2 = ds_list_find_value(instance_find(objBossTwoHead, 0).healthList, ds_list_size(instance_find(objBossTwoHead, 0).healthList) - 1);
+		ds_list_delete(instance_find(objBossTwoHead, 0).healthList, ds_list_size(instance_find(objBossTwoHead, 0).healthList) - 1);
+		instance_destroy(h2);
+		//instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
+		if(ds_list_size(instance_find(objBossTwoHead, 0).healthList) == 0){
 			event_perform_object(objChar, ev_other, ev_user1);
+			instance_destroy(objBall);
 		}
 		audio_play_sound(sndEnemyHitHard, 11, false);
 	}else{
@@ -196,16 +218,22 @@ if(!hit and star and position_meeting(x ,y, objBossThreeMid)){
 	
 	hit = true;
 	vspeed *= -1;
-	instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
-	if(instance_number(objEnemyHealth) == 0){
+	var h = ds_list_find_value(instance_find(objBossThreeMid, 0).healthList, ds_list_size(instance_find(objBossThreeMid, 0).healthList) - 1);
+	ds_list_delete(instance_find(objBossThreeMid, 0).healthList, ds_list_size(instance_find(objBossThreeMid, 0).healthList) - 1);
+	instance_destroy(h);
+	
+	if(ds_list_size(instance_find(objBossThreeMid, 0).healthList) == 0){
 		event_perform_object(objChar, ev_other, ev_user1);
-		instance_destroy(objBall);
+		instance_destroy(self);
 	}
 	if(sprite_index == sprSuperStar){	
-		instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
-		if(instance_number(objEnemyHealth) == 0){
+		var h2 = ds_list_find_value(instance_find(objBossThreeMid, 0).healthList, ds_list_size(instance_find(objBossThreeMid, 0).healthList) - 1);
+		ds_list_delete(instance_find(objBossThreeMid, 0).healthList, ds_list_size(instance_find(objBossThreeMid, 0).healthList) - 1);
+		instance_destroy(h2);
+		//instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
+		if(ds_list_size(instance_find(objBossThreeMid, 0).healthList) == 0){
 			event_perform_object(objChar, ev_other, ev_user1);
-			instance_destroy(objBall);
+			instance_destroy(self);
 		}
 		audio_play_sound(sndEnemyHitHard, 11, false);
 	}else{
@@ -220,7 +248,9 @@ if(!hit and star and position_meeting(x ,y, objBossThreeMid)){
 }
 
 if(!hit and star and position_meeting(x ,y, objBossThreeSide)){
-	with (instance_find(objBossThreeSide, 0)){
+	var currentSide = instance_nearest(x, y, objBossThreeSide);
+	
+	with (currentSide){
 		event_user(0);
 	}
 	
@@ -231,16 +261,22 @@ if(!hit and star and position_meeting(x ,y, objBossThreeSide)){
 	
 	hit = true;
 	vspeed *= -1;
-	instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
-	if(instance_number(objEnemyHealth) == 0){
+	var h = ds_list_find_value(currentSide.healthList, ds_list_size(currentSide.healthList) - 1);
+	ds_list_delete(currentSide.healthList, ds_list_size(currentSide.healthList) - 1);
+	instance_destroy(h);
+	
+	if(ds_list_size(currentSide.healthList) == 0){
 		event_perform_object(objChar, ev_other, ev_user1);
-		instance_destroy(objBall);
+		instance_destroy(self);
 	}
 	if(sprite_index == sprSuperStar){	
-		instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
-		if(instance_number(objEnemyHealth) == 0){
+		var h2 = ds_list_find_value(currentSide.healthList, ds_list_size(currentSide.healthList) - 1);
+		ds_list_delete(currentSide.healthList, ds_list_size(currentSide.healthList) - 1);
+		instance_destroy(h2);
+		//instance_destroy(instance_nearest(0, room_height, objEnemyHealth));
+		if(ds_list_size(currentSide.healthList) == 0){
 			event_perform_object(objChar, ev_other, ev_user1);
-			instance_destroy(objBall);
+			instance_destroy(self);
 		}
 		audio_play_sound(sndEnemyHitHard, 11, false);
 	}else{
