@@ -42,5 +42,5 @@ if(isScreenshake == 1)
 }
 else
 {
-    camera_set_view_pos(view_camera[0], 5, 5);
+    camera_set_view_pos(view_camera[0], 0, 0);
 }
