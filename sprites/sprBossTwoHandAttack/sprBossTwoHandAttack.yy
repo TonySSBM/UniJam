@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"sprBossTwoHandAttack",
   "bboxMode":0,
-  "bbox_bottom":44,
-  "bbox_left":2,
-  "bbox_right":28,
+  "bbox_bottom":96,
+  "bbox_left":28,
+  "bbox_right":83,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,16 +12,18 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b2864311-2bab-4db9-8d01-aa183f8b11aa","name":"b2864311-2bab-4db9-8d01-aa183f8b11aa","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"ca370e29-1e37-4947-9e9e-92f72cbd71ce","name":"ca370e29-1e37-4947-9e9e-92f72cbd71ce","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"d54836d1-3ec3-4a6d-b688-253836930962","name":"d54836d1-3ec3-4a6d-b688-253836930962","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"f4538199-5c25-4ba8-b02b-2f3d545ac019","name":"f4538199-5c25-4ba8-b02b-2f3d545ac019","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"acf46f77-3de1-4550-a3f7-0961538b7d3b","name":"acf46f77-3de1-4550-a3f7-0961538b7d3b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"78ed63f8-c29d-4a1a-a248-a9e6a9291906","name":"78ed63f8-c29d-4a1a-a248-a9e6a9291906","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"1dc0f000-0e3a-4b97-92d6-79c7a85e21a2","name":"1dc0f000-0e3a-4b97-92d6-79c7a85e21a2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"afd383bb-5034-4166-83db-1620e441fe15","name":"afd383bb-5034-4166-83db-1620e441fe15","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":128,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"de6d1440-e84d-40a8-bc6c-1765ac51fda7","blendMode":0,"displayName":"default","isLocked":false,"name":"de6d1440-e84d-40a8-bc6c-1765ac51fda7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"6e8dfecd-d4df-4c79-9b7d-e56321eccd85","blendMode":0,"displayName":"default","isLocked":false,"name":"6e8dfecd-d4df-4c79-9b7d-e56321eccd85","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprBossTwoHandAttack",
   "nineSlice":null,
@@ -51,7 +53,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":3.0,
+    "length":5.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -73,14 +75,20 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b2864311-2bab-4db9-8d01-aa183f8b11aa","path":"sprites/sprBossTwoHandAttack/sprBossTwoHandAttack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5a17d68b-7a7a-468a-8186-6b39c886eba9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f4538199-5c25-4ba8-b02b-2f3d545ac019","path":"sprites/sprBossTwoHandAttack/sprBossTwoHandAttack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"27ec4a77-f69a-45c9-ae72-9c0eb9506730","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ca370e29-1e37-4947-9e9e-92f72cbd71ce","path":"sprites/sprBossTwoHandAttack/sprBossTwoHandAttack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c557b0e2-6d4c-4d2e-b247-609dea7ce4f3","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"acf46f77-3de1-4550-a3f7-0961538b7d3b","path":"sprites/sprBossTwoHandAttack/sprBossTwoHandAttack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"470a7cca-d435-48d3-89fc-f2474e34e562","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d54836d1-3ec3-4a6d-b688-253836930962","path":"sprites/sprBossTwoHandAttack/sprBossTwoHandAttack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"54742ddd-e401-4f71-8c39-7a407aca33d1","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"78ed63f8-c29d-4a1a-a248-a9e6a9291906","path":"sprites/sprBossTwoHandAttack/sprBossTwoHandAttack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"34550c2b-a38d-41ba-a050-23feea8b0ad3","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1dc0f000-0e3a-4b97-92d6-79c7a85e21a2","path":"sprites/sprBossTwoHandAttack/sprBossTwoHandAttack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b35db021-ce4c-4345-bdaa-95e5b37bafe7","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"afd383bb-5034-4166-83db-1620e441fe15","path":"sprites/sprBossTwoHandAttack/sprBossTwoHandAttack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"2590ff9c-0997-47be-9a64-c0226639dd6e","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
