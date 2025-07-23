@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.243492,
+  "duration":2.5095012,
   "name":"sndBossTextThump",
   "parent":{
     "name":"Sounds",
