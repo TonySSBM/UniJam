@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":9.21186,
+  "duration":15.236894,
   "name":"sndCharge",
   "parent":{
     "name":"Sounds",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sndCharge.mp3",
   "type":0,
-  "volume":0.5,
+  "volume":0.47,
 }

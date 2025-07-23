@@ -15,10 +15,10 @@ if(x < hBallBounds or x > (room_width - hBallBounds)){
 		}
 		audio_play_sound(sndProjectileBump, 11, false);
 	}else{  //ADD IN JUPITER SFX
-		if(!audio_is_playing(sndProjectileBump)){
-			audio_stop_sound(sndProjectileBump);
+		if(!audio_is_playing(sndJupiterBump)){
+			audio_stop_sound(sndJupiterBump);
 		}
-		audio_play_sound(sndProjectileBump, 11, false);
+		audio_play_sound(sndJupiterBump, 11, false);
 		
 		with (playerInstance) {
 			if(isScreenshake == 0){
