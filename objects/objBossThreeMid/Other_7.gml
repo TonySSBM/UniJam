@@ -6,7 +6,7 @@ if(sprite_index == sprBossThreeAttackMiddle){
 	sprite_index = sprBossThreeIdleMiddle;
 	audio_play_sound(sndBossAttack, 11, false);
 	
-	var newBall = instance_create_layer(x,y,layer,objBall);
+	var newBall = instance_create_layer(x,y + 60,layer,objBall);
 	newBall.sprite_index = sprJupiter;
 	newBall.hspeed = random_range(-.3,.3);
 	newBall.speed *= 0.2;
