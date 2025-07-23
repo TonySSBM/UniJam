@@ -1,6 +1,6 @@
 /// @description Stop Firing
 
-if(sprite_index == sprBossTwoHeadIntro){
+if(sprite_index == sprBossTwoHeadAttack){
 	firingTime = random_range(2, 5);
 	alarm[0] = firingTime * 60;
 	sprite_index = sprBossTwoHeadIdle;

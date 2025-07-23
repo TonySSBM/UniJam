@@ -34,7 +34,9 @@ if(superActive or global.gamePaused){
 	}
 	
 	if(instance_number(objBossThreeSide) != 0){
-		objBossThreeSide.alarm[0]++;
+		with(objBossThreeSide){
+			alarm[0]++;
+		}
 	}
 }
 

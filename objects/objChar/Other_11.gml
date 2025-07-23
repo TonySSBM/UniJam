@@ -48,7 +48,7 @@ if(instance_number(objBossTwoHead) != 0){
 	var bh = instance_create_layer(320, 0, layer, objBossThreeBody);
 	
 	with (bs){
-		event_user(0);
+		event_user(1);
 	}
 }
 
@@ -63,7 +63,7 @@ if(instance_number(objBossOne) != 0){
 	rh.image_xscale *= -1;
 	
 	with (bs){
-		event_user(0);
+		event_user(1);
 	}
 }
 

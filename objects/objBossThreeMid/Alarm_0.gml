@@ -1,4 +1,4 @@
 /// @description Start Firing
 
 image_index = 0;
-sprite_index = sprBossThreeIntroMiddle;
+sprite_index = sprBossThreeAttackMiddle;

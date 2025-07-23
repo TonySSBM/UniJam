@@ -7,6 +7,6 @@ if(sprite_index == sprBossOneAttack){
 	sprite_index = sprBossOneIdle;
 	audio_play_sound(sndBossAttack, 11, false);
 	
-	var newBall = instance_create_layer(x,y,layer,objBall);
+	var newBall = instance_create_layer(x,y + 40,layer,objBall);
 	newBall.sprite_index = sprMoon;
 }

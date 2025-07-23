@@ -23,6 +23,7 @@ with(objChar){
 	swinging = false;
 	charging = false;
 	superActive = false;
-	
+	x = 320;
+	y = 288;
 }
 audio_stop_sound(sndCharge);
