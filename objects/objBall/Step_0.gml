@@ -9,11 +9,24 @@ if(x < hBallBounds or x > (room_width - hBallBounds)){
 		reset = false;
 		alarm[0] = resetCounter;
 	}
-	
-	if(!audio_is_playing(sndProjectileBump)){
-		audio_stop_sound(sndProjectileBump);
+	if(sprite_index != sprJupiter){
+		if(!audio_is_playing(sndProjectileBump)){
+			audio_stop_sound(sndProjectileBump);
+		}
+		audio_play_sound(sndProjectileBump, 11, false);
+	}else{  //ADD IN JUPITER SFX
+		if(!audio_is_playing(sndProjectileBump)){
+			audio_stop_sound(sndProjectileBump);
+		}
+		audio_play_sound(sndProjectileBump, 11, false);
+		
+		with (playerInstance) {
+			if(isScreenshake == 0){
+				isScreenshake = 1;
+				alarm[0] = screenshakeLength / 2;
+			}
+		}
 	}
-	audio_play_sound(sndProjectileBump, 11, false);
 }
 
 //collision with top wall
