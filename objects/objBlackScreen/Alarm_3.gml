@@ -13,4 +13,8 @@ if(instance_number(objBossThreeBody) != 0){
 		image_alpha = 1;
 	}
 }
+
+with(objEnemyHealth){
+	image_alpha = 1;
+}
 event_user(0);

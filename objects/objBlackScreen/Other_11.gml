@@ -24,3 +24,6 @@ if(instance_number(objBossThreeBody) != 0){
 		image_alpha = 0;
 	}
 }
+with(objEnemyHealth){
+	image_alpha = 0;
+}

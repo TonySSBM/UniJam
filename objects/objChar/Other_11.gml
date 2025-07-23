@@ -8,10 +8,11 @@ if(instance_number(objBossThreeMid) != 0 and ds_list_size(objBossThreeMid.health
 	
 	//go to win screen
 	if(instance_number(objBossThreeSide) == 0){	
+		with(objChar){
+			event_user(4);
+		}
 		instance_destroy(objBall);
 		instance_destroy(objBossThreeBody);
-		audio_stop_all();
-		event_user(4);
 		show_debug_message("COMPLETED GAME");
 		//room_goto_next();
 	}
@@ -27,10 +28,11 @@ if(instance_number(objBossThreeSide) != 0){
 	
 	//go to win screen
 	if(instance_number(objBossThreeMid) == 0 and instance_number(objBossThreeSide) == 0){	
+		with(objChar){
+			event_user(4);
+		}
 		instance_destroy(objBall);
 		instance_destroy(objBossThreeBody);
-		audio_stop_all();
-		event_user(4);
 		show_debug_message("COMPLETED GAME");
 		//room_goto_next();
 	}
