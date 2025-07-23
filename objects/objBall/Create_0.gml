@@ -26,3 +26,7 @@ image_yscale = .7;
 
 collisionSpeedMultiplier = 0.8;
 
+oobFrames = 0;
+oobTotalFrames = 0;
+oobMax = 120;
+oobTotalMax = 600;

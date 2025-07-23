@@ -1,5 +1,16 @@
 /// @description Ball Moving
 
+if(x < 210 or x > 429 or y < 6){
+	oobFrames++;
+	oobTotalFrames++;
+	if(oobFrames > oobMax or oobTotalFrames > oobTotalMax){
+		star = true;
+		instance_destroy(self);
+	}
+}else{
+	oobFrames = 0;
+}
+
 //collision with side of screen
 if(x < hBallBounds or x > (room_width - hBallBounds)){
 	hspeed *= -1;
