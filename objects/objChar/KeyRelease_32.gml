@@ -4,7 +4,7 @@ if(!swinging and !global.gamePaused){
 	swinging = true;
 	charging = false;
 	audio_play_sound(sndSwing, 11, false);
-	moveSpeed /= slowSpeedModifier;
+	moveSpeed = 1.7;
 	image_index = 0;
 	sprite_index = sprCharSwing;
 	if(audio_is_playing(sndCharge)){

@@ -1,10 +1,12 @@
 /// @description Super Move
 
-if(meter >= 100 and !swinging and !charging and !global.gamePaused){
+if(meter >= 100 and !swinging and !global.gamePaused){
 	meter = 0;
 	swinging = true;
 	charging = false;
 	swingCharge = 0;
+	moveSpeed = 1.7;
+	audio_stop_sound(sndCharge);
 	
 	//super move animation
 	sprite_index = sprCharSuper;
