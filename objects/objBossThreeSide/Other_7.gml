@@ -2,7 +2,14 @@
 
 if(sprite_index == sprBossThreeAttackLeft){
 	
-	firingTime = random_range(4, 9);
+	var bossLeft = instance_number(objBossThreeMid) + instance_number(objBossThreeSide);
+	if(bossLeft == 1){
+		firingTime = random_range(2, 4);
+	} else if(bossLeft == 2){
+		firingTime = random_range(3, 5);
+	}else{
+		firingTime = random_range(4, 6);
+	}
 	alarm[0] = firingTime * 60;
 	sprite_index = sprBossThreeIdleLeft;
 	audio_play_sound(sndBossAttack, 11, false);

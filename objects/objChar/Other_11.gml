@@ -3,6 +3,7 @@
 
 if(instance_number(objBossThreeMid) != 0 and ds_list_size(objBossThreeMid.healthList) == 0){
 	instance_destroy(objBossThreeMid);
+	audio_play_sound(sndBossDefeated, 11, false);
 	
 	//go to win screen
 	if(instance_number(objBossThreeSide) == 0){	
@@ -18,6 +19,7 @@ if(instance_number(objBossThreeSide) != 0){
 	with (objBossThreeSide){
 		if(ds_list_size(healthList) == 0){
 			instance_destroy(self);
+			audio_play_sound(sndBossDefeated, 11, false);
 		}
 	}
 	

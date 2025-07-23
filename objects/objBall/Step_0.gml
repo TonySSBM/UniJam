@@ -231,6 +231,7 @@ if(!hit and star and position_meeting(x ,y, objBossThreeMid)){
 	if(ds_list_size(instance_find(objBossThreeMid, 0).healthList) == 0){
 		event_perform_object(objChar, ev_other, ev_user1);
 		instance_destroy(self);
+		exit;
 	}
 	if(sprite_index == sprSuperStar){	
 		var h2 = ds_list_find_value(instance_find(objBossThreeMid, 0).healthList, ds_list_size(instance_find(objBossThreeMid, 0).healthList) - 1);
@@ -240,6 +241,7 @@ if(!hit and star and position_meeting(x ,y, objBossThreeMid)){
 		if(ds_list_size(instance_find(objBossThreeMid, 0).healthList) == 0){
 			event_perform_object(objChar, ev_other, ev_user1);
 			instance_destroy(self);
+			exit;
 		}
 		audio_play_sound(sndEnemyHitHard, 11, false);
 	}else{
@@ -274,6 +276,7 @@ if(!hit and star and position_meeting(x ,y, objBossThreeSide)){
 	if(ds_list_size(currentSide.healthList) == 0){
 		event_perform_object(objChar, ev_other, ev_user1);
 		instance_destroy(self);
+		exit;
 	}
 	if(sprite_index == sprSuperStar){	
 		var h2 = ds_list_find_value(currentSide.healthList, ds_list_size(currentSide.healthList) - 1);
@@ -283,6 +286,7 @@ if(!hit and star and position_meeting(x ,y, objBossThreeSide)){
 		if(ds_list_size(currentSide.healthList) == 0){
 			event_perform_object(objChar, ev_other, ev_user1);
 			instance_destroy(self);
+			exit;
 		}
 		audio_play_sound(sndEnemyHitHard, 11, false);
 	}else{
