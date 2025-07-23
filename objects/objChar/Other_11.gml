@@ -58,3 +58,9 @@ if(instance_number(objBossOne) != 0){
 	var rh = instance_create_layer(380, 64, layer, objBossTwoHand);
 	rh.image_xscale *= -1;
 }
+
+if(instance_number(objBossFake) != 0){
+	instance_destroy(objBossFake);
+	var nb = instance_create_layer(320, 64, layer, objBossOne);
+	event_user(4);
+}

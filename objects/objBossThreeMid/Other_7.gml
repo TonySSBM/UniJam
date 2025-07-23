@@ -1,6 +1,6 @@
 /// @description Stop Firing
 
-if(sprite_index == sprBossThreeAttackMiddle){
+if(sprite_index == sprBossThreeIntroMiddle){
 	var bossLeft = instance_number(objBossThreeMid) + instance_number(objBossThreeSide);
 	if(bossLeft == 1){
 		firingTime = random_range(1, 2);
