@@ -35,8 +35,14 @@ if(y >= (room_height - 6)){
 	instance_destroy(self);
 }
 
+var spr1_w = sprite_get_width(bbox_bottom);
+var spr1_h = sprite_get_height(bbox_left);
+var spr2_w = sprite_get_width(playerInstance.sprite_index);
+var spr2_h = sprite_get_height(playerInstance.sprite_index);
+
 //collision with player object
-if(!collided and playerInstance.sprite_index == sprCharSwing and playerInstance.image_index > 1 and position_meeting(x ,y, playerInstance)){
+if(!collided and playerInstance.sprite_index == sprCharSwing and playerInstance.image_index > 1 and rectangle_in_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom,
+                          playerInstance.bbox_left, playerInstance.bbox_top, playerInstance.bbox_right, playerInstance.bbox_bottom)) {
 	collided = true;
 	hit = false;
 	star = true;
