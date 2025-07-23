@@ -1,6 +1,6 @@
 /// @description Move Left
 
-if((!superActive) and !keyboard_check(ord("D"))){
+if((!superActive and !global.gamePaused) and !keyboard_check(ord("D"))){
 	//show_debug_message(superActive);
 	if(!swinging && !charging){
 		image_xscale = -1;

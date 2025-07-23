@@ -1,6 +1,6 @@
 /// @description Charging Swing
 
-if(!swinging){
+if(!swinging and !global.gamePaused){
 	charging = true;
 	if(global.slowdown){
 		swingCharge +=  chargeRate / 2 * delta_time / 1_000_000;

@@ -18,3 +18,4 @@ bossHealth = 1/*8*/;
 healthList = ds_list_create();
 
 event_user(1);
+

@@ -1,28 +1,30 @@
 /// @description Sin Wave
 
-if(x + xPos > room_width - hBounds){
-	xPos = -1;
-}else if(x + xPos < hBounds){
-	xPos = 1;
-}
+if(!global.gamePaused){
+	if(x + xPos > room_width - hBounds){
+		xPos = -1;
+	}else if(x + xPos < hBounds){
+		xPos = 1;
+	}
 
-if(global.slowdown and !slow){
-	slow = true;
-	moveSpeed /= slowRate;
-}else if(!global.slowdown and slow){
-	slow = false;
-	moveSpeed *= slowRate;
-}
+	if(global.slowdown and !slow){
+		slow = true;
+		moveSpeed /= slowRate;
+	}else if(!global.slowdown and slow){
+		slow = false;
+		moveSpeed *= slowRate;
+	}
 
-if(!playerInstance.superActive){
-	x += xPos * moveSpeed;
-}
+	if(!playerInstance.superActive){
+		x += xPos * moveSpeed;
+	}
 
-if (flash_timer > 0) {
-    flash_timer--;
-    if (flash_timer == 0) {
-        image_blend = c_white;
-    }
-}
+	if (flash_timer > 0) {
+	    flash_timer--;
+	    if (flash_timer == 0) {
+	        image_blend = c_white;
+	    }
+	}
 
-depth = -y;
+	depth = -y;
+}

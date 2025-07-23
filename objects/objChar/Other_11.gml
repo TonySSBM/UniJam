@@ -1,5 +1,6 @@
 /// @description Enemy Defeated
 
+var bs = instance_find(objBlackScreen, 0);
 
 if(instance_number(objBossThreeMid) != 0 and ds_list_size(objBossThreeMid.healthList) == 0){
 	instance_destroy(objBossThreeMid);
@@ -46,6 +47,9 @@ if(instance_number(objBossTwoHead) != 0){
 	rh.image_xscale = -1;
 	var bh = instance_create_layer(320, 0, layer, objBossThreeBody);
 	
+	with (bs){
+		event_user(0);
+	}
 }
 
 if(instance_number(objBossOne) != 0){
@@ -57,10 +61,16 @@ if(instance_number(objBossOne) != 0){
 	var mh = instance_create_layer(320, 64, layer, objBossTwoHead);
 	var rh = instance_create_layer(380, 64, layer, objBossTwoHand);
 	rh.image_xscale *= -1;
+	
+	with (bs){
+		event_user(0);
+	}
 }
 
 if(instance_number(objBossFake) != 0){
 	instance_destroy(objBossFake);
 	var nb = instance_create_layer(320, 64, layer, objBossOne);
-	event_user(4);
+	with (bs){
+		event_user(0);
+	}
 }

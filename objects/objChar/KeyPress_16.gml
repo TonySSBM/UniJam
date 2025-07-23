@@ -1,6 +1,6 @@
 /// @description Super Move
 
-if(meter >= 100 and !swinging and !charging){
+if(meter >= 100 and !swinging and !charging and !global.gamePaused){
 	meter = 0;
 	swinging = true;
 	charging = false;

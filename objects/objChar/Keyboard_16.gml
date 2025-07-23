@@ -1,6 +1,6 @@
 /// @description Slowdown
 
-if(meter > 0 and meter < 100){
+if(meter > 0 and meter < 100 and !global.gamePaused){
 	if(!global.slowdown){
 		audio_play_sound(sndSpeedDown, 11, false);
 	}

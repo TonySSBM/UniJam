@@ -1,6 +1,6 @@
 /// @description Animation State Controller
 
-if(!swinging and !charging){
+if(!swinging and !charging  and !global.gamePaused){
 	if(vspeed == 0 and hspeed == 0){
 		if(sprite_index != sprCharIdle){
 			sprite_index = sprCharIdle;
@@ -20,7 +20,7 @@ if(moveSpeed > baseMoveSpeed){
 }
 
 
-if(superActive){
+if(superActive or global.gamePaused){
 	if(instance_number(objBossOne) != 0){
 		objBossOne.alarm[0]++;
 	}
@@ -31,6 +31,9 @@ if(superActive){
 	
 	if(instance_number(objBossThreeMid) != 0){
 		objBossThreeMid.alarm[0]++;
+	}
+	
+	if(instance_number(objBossThreeSide) != 0){
 		objBossThreeSide.alarm[0]++;
 	}
 }

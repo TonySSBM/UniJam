@@ -1,6 +1,6 @@
 /// @description Move Right
 
-if((!superActive) and !keyboard_check(ord("A"))){
+if((!superActive and !global.gamePaused) and !keyboard_check(ord("A"))){
 	if(!swinging && !charging){
 		image_xscale = 1;
 	}
