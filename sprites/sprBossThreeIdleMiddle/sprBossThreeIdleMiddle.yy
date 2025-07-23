@@ -26,7 +26,7 @@
   ],
   "name":"sprBossThreeIdleMiddle",
   "nineSlice":null,
-  "origin":4,
+  "origin":1,
   "parent":{
     "name":"sprBossThree",
     "path":"folders/Sprites/sprBossThree.yy",
@@ -90,7 +90,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":128,
-    "yorigin":128,
+    "yorigin":0,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

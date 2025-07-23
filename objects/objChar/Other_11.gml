@@ -38,9 +38,10 @@ if(instance_number(objBossTwoHead) != 0){
 	audio_play_sound(sndBossDefeated, 11, false);
 	
 	//create boss three
-	var lh = instance_create_layer(250, 81, layer, objBossThreeSide);
-	var mh = instance_create_layer(320, 97, layer, objBossThreeMid);
-	var rh = instance_create_layer(388, 81, layer, objBossThreeSide);
+	var lh = instance_create_layer(256, 0, layer, objBossThreeSide);
+	var mh = instance_create_layer(320, 0, layer, objBossThreeMid);
+	var rh = instance_create_layer(384, 0, layer, objBossThreeSide);
+	rh.image_xscale = -1;
 	var bh = instance_create_layer(320, 0, layer, objBossThreeBody);
 	
 }
@@ -50,8 +51,8 @@ if(instance_number(objBossOne) != 0){
 	instance_destroy(objBossOne);
 	audio_play_sound(sndBossDefeated, 11, false);
 	
-	var lh = instance_create_layer(294, 64, layer, objBossTwoHand);
+	var lh = instance_create_layer(260, 64, layer, objBossTwoHand);
 	var mh = instance_create_layer(320, 64, layer, objBossTwoHead);
-	var rh = instance_create_layer(346, 64, layer, objBossTwoHand);
+	var rh = instance_create_layer(380, 64, layer, objBossTwoHand);
 	rh.image_xscale *= -1;
 }

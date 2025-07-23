@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprBossThreeIdle",
-    "path":"sprites/sprBossThreeIdle/sprBossThreeIdle.yy",
+    "name":"sprBossThreeIdleMiddle",
+    "path":"sprites/sprBossThreeIdleMiddle/sprBossThreeIdleMiddle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

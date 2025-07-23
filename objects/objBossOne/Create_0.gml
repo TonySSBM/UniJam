@@ -14,7 +14,7 @@ playerInstance = instance_find(objChar, 0);
 
 flash_timer = 0;
 
-bossHealth = 8;
+bossHealth = 1/*8*/;
 healthList = ds_list_create();
 
 event_user(1);

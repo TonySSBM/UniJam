@@ -8,4 +8,4 @@ if (flash_timer > 0) {
     }
 }
 
-depth = -y;
+depth = -y - 1;
