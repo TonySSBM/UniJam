@@ -98,7 +98,7 @@ if(!collided and playerInstance.sprite_index == sprCharSwing and playerInstance.
 	}
 	
 	show_debug_message(speed);
-	if(speed > 6.7 or (global.slowdown and speed > (6.7 / slowRate))){
+	if(speed > playerInstance.chargeForPurple or (global.slowdown and speed > (playerInstance.chargeForPurple / slowRate))){
 		sprite_index = sprSuperStar;
 		audio_play_sound(sndTennisHitHard, 11, false);
 		show_debug_message("SUPER: " + string(actualReturnSpeed));

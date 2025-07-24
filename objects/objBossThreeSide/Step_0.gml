@@ -27,3 +27,12 @@ if(!global.gamePaused){
 	depth = -y - 1;
 
 }
+
+if(global.slowdown)
+{
+	image_speed = 0.5;
+}
+else
+{
+	image_speed = 1;	
+}

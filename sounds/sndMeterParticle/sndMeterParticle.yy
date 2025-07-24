@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sndShatter",
+  "%Name":"sndMeterParticle",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.6375737,
-  "name":"sndShatter",
+  "duration":0.7234467,
+  "name":"sndMeterParticle",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sndShatter.mp3",
+  "soundFile":"sndMeterParticle.mp3",
   "type":0,
-  "volume":0.1,
+  "volume":0.05,
 }

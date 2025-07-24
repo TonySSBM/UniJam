@@ -11,6 +11,7 @@ if(meter >= 100 and !swinging and !global.gamePaused){
 	//super move animation
 	sprite_index = sprCharSuper;
 	audio_play_sound(sndSpecialStartup, 11, true);
+	global.meterFull = 0;
 	
 	speed = 0;
 	image_xscale = 1;
