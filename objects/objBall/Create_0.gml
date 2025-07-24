@@ -30,3 +30,5 @@ oobFrames = 0;
 oobTotalFrames = 0;
 oobMax = 120;
 oobTotalMax = 600;
+
+timesHit = 0;

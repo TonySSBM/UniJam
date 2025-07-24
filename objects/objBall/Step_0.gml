@@ -115,6 +115,14 @@ if(!collided and playerInstance.sprite_index == sprCharSwing and playerInstance.
 				var starDrop = instance_create_layer(x, y, layer, objStarDrop);
 			}
 		}
+		
+		if(sprite_index == sprStar)
+		{
+			for(var i = 0; i < 3; i++){
+				var starDrop = instance_create_layer(x, y, layer, objStarDropSmall);
+			}
+		}
+		
 		sprite_index = sprStar;
 		audio_play_sound(sndTennisHitRegular, 11, false);
 	}

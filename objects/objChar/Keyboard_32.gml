@@ -18,7 +18,11 @@ if(!swinging and !global.gamePaused){
 
 if(!global.gamePaused)
 {
-	particleCooldown = 10 - swingCharge;
+	particleCooldown = 15 - swingCharge;
+	if(particleCooldown <= 2)
+	{
+		particleCooldown = 2;	
+	}
 	particleCounter = particleCounter + 1;
 	if( particleCounter >= particleCooldown)
 	{

@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sndCharge",
+  "%Name":"sndYellowStarCollect",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":15.288005,
-  "name":"sndCharge",
+  "duration":0.44582766,
+  "name":"sndYellowStarCollect",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sndCharge.mp3",
+  "soundFile":"sndYellowStarCollect.mp3",
   "type":0,
-  "volume":0.55,
+  "volume":0.05,
 }

@@ -4,7 +4,7 @@ global.slowdown = false;
 randomise();
 
 meter = 50.0; //change later
-meterRate = 7;
+meterRate = 15;
 meterChargeRate = 10;
 
 swingCharge = 0;
@@ -13,7 +13,7 @@ swinging = false;
 charging = false;
 superActive = false;
 
-moveSpeed = 1.7;
+moveSpeed = 1.8;
 baseMoveSpeed = moveSpeed;
 slowSpeedModifier = 1/3;
 NORMALIZE_MOVEMENT = 0.7071;
@@ -32,7 +32,7 @@ chargeForPurple = 6.5;
 
 screenshaking = 0;
 isScreenshake = 0;
-screenshakePower = 7;
+screenshakePower = 8;
 screenshakeLength = 10;
 
 

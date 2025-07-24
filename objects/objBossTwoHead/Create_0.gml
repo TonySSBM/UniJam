@@ -17,7 +17,7 @@ flash_timer = 0;
 
 hands = [instance_find(objBossTwoHand, 0), instance_find(objBossTwoHand, 1)];
 
-bossHealth = 10;
+bossHealth = 1;
 healthList = ds_list_create();
 
 event_user(1);

@@ -8,3 +8,5 @@ speedDivider = 5;
 speed = objChar.swingCharge / speedDivider;
 
 
+
+audio_play_sound(sndPurpleStarCharge, 10, false);
