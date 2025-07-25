@@ -32,7 +32,7 @@ chargeForPurple = 6.5;
 
 screenshaking = 0;
 isScreenshake = 0;
-screenshakePower = 8;
+screenshakePower = 10;
 screenshakeLength = 10;
 
 

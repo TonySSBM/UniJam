@@ -6,3 +6,8 @@ for(var i = 0; i < 40; i++){
 
 audio_stop_sound(sndUpbeatMusic);
 
+with(objBall)
+{
+	star = true;
+	instance_destroy(self);
+}
