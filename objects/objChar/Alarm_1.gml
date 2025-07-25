@@ -1,5 +1,8 @@
 /// @description victory anim + sound
 
+global.isEnemyHit = 1000
+
+
 //character transitions to victory animation and victory sound plays
 show_debug_message("made it to 1");
 global.gamePaused = true;

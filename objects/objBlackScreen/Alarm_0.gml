@@ -1,5 +1,6 @@
 /// @description boss roar + intro animation + screenshake play on same frame
 
+
 if(bossCheck == 1){
 	audio_play_sound(sndBossOneRoar, 11, false);
 	instance_find(objBossOne, 0).sprite_index = sprBossOneIntro;

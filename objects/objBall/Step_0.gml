@@ -1,5 +1,15 @@
 /// @description Ball Moving
 
+if(sprite_index == sprSuperStar)
+{
+	particleCounter = particleCounter + 1;
+	if(particleCounter >= particleCooldown)
+	{
+		particleCounter = 0;
+		instance_create_layer(x, y, "Instances", objPurpleStarTrail);
+	}
+}
+
 if(x < 210 or x > 429 or y < 6){
 	oobFrames++;
 	oobTotalFrames++;

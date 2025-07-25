@@ -3,7 +3,7 @@
 global.slowdown = false;
 randomise();
 
-meter = 50.0; //change later
+meter = 25.0; //change later
 meterRate = 15;
 meterChargeRate = 10;
 
@@ -40,3 +40,11 @@ event_user(2); //spawn alien audience
 
 particleCooldown = 5;
 particleCounter = 0;
+
+global.isEnemyHit = 0;
+global.alienCheerTimer = 150;
+
+image_speed = 1;
+image_alpha = 1;
+
+isGameOver = false;

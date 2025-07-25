@@ -1,5 +1,12 @@
 /// @description Animation State Controller
 
+global.isEnemyHit = global.isEnemyHit - 1;
+if(global.isEnemyHit <= 0)
+{
+	global.isEnemyHit = 0;	
+}
+
+
 if(!swinging and !charging  and !global.gamePaused){
 	if(vspeed == 0 and hspeed == 0){
 		if(sprite_index != sprCharIdle){
@@ -48,4 +55,9 @@ if(isScreenshake == 1)
 else
 {
     camera_set_view_pos(view_camera[0], 0, 0);
+}
+
+if(isGameOver == true)
+{
+	instance_destroy();	
 }

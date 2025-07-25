@@ -22,3 +22,5 @@ show_debug_message("game is back");
 //make screen fade out
 var bossscreen = instance_find(objBossTitle, 0);
 bossscreen.fade = true;
+
+audio_play_sound(sndUpbeatMusic, 99, true);

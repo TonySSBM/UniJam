@@ -8,3 +8,5 @@ for(var i = 0; i < 2; i++){
 		event_user(0);
 	}
 }
+
+global.isEnemyHit = global.alienCheerTimer;

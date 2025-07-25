@@ -32,3 +32,6 @@ oobMax = 120;
 oobTotalMax = 600;
 
 timesHit = 0;
+
+particleCooldown = 2;
+particleCounter = 0;

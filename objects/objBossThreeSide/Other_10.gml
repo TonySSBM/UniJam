@@ -2,3 +2,5 @@
 
 image_blend = c_silver;
 flash_timer = 15;
+
+global.isEnemyHit = global.alienCheerTimer;
